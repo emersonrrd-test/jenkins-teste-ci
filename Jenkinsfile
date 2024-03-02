@@ -1,8 +1,6 @@
 pipeline {
     
-    agent {
-        label 'main'
-    }
+    agent none
 
     environment {
         COMPOSE_PROJECT_NAME = "${env.JOB_NAME}-${env.BUILD_ID}"
@@ -49,7 +47,7 @@ pipeline {
     post {
 
         always {
-            node('main'){
+            node('master'){
                 
                 sh  '''
                 '''
