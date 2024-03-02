@@ -26,14 +26,11 @@ pipeline {
 
         }
 
-
+/*
         stage('Sock') {
 
             agent {
                 dockerfile {
-                    // alwaysPull false
-                    // image 'microsoft/dotnet:2.2-sdk'
-                    // reuseNode false
                     args '-u root:root -v /var/run/docker.sock:/var/run/docker.sock'
                 }
             }
@@ -45,7 +42,7 @@ pipeline {
             }
 
         }
-
+*/
     }
     post {
 
