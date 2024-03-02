@@ -26,7 +26,7 @@ pipeline {
 
         }
 
-/*
+
         stage('Sock') {
 
             agent {
@@ -42,7 +42,7 @@ pipeline {
             }
 
         }
-*/
+
     }
     post {
 
